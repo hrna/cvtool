@@ -6,7 +6,6 @@ $(document).ready(function() {
             var $input = $("<input>",{"type": "text", "name": "expertise[]", "class": "form-control", "placeholder": "Something else"});
             $parentDiv.append($input);
             $(".input-parent").append($parentDiv);
-            $("#hide-1").remove();
         });
     }
 });
