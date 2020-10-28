@@ -4,17 +4,17 @@
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="fullName">Full name</label>
-				<input type="text" name="fullName" class="form-control" id="fullName" placeholder="Mikko Mallikas">
+				<input type="text" name="fullName" class="form-control" id="fullName" placeholder="Mikko Mallikas" />
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="address">Address</label>
-			<input type="text" name="address" class="form-control" id="address" placeholder="Kotitie 3 B2">
+			<input type="text" name="address" class="form-control" id="address" placeholder="Kotitie 3 B2" />
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-6">
 				<label for="city">City</label>
-				<input type="text" name="city" class="form-control" id="city" placeholder="Vantaa">
+				<input type="text" name="city" class="form-control" id="city" placeholder="Vantaa" />
 			</div>
 			<div class="form-group col-md-4">
 				<label for="province">State</label>
@@ -26,13 +26,13 @@
 			</div>
 			<div class="form-group col-md-2">
 				<label for="zipcode">Zip code</label>
-				<input type="text" class="form-control" id="zipcode" placeholder="01530">
+				<input type="text" class="form-control" id="zipcode" placeholder="01530" />
 			</div>
 		</div>
 		<h4>Areas of expertise <span class="btn btn-secondary btn-sm fas fa-plus-circle add"></span></h4>
 		<div class="input-parent">
 			<div class="form-group expertise-field">
-				<input type="text" name="expertise[]" class="form-control" id="expertise" placeholder="Microsoft Visual Studio">
+				<input type="text" name="expertise[]" class="form-control" id="expertise" placeholder="Microsoft Visual Studio" />
 			</div>
 		</div>
 	</form>
