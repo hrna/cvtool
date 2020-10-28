@@ -1,2 +1,7 @@
 @import url("../bootstrap-4.5.3/css/bootstrap.min.css");
 
+.page-padding
+{
+    padding-top: 30px;
+}
+
