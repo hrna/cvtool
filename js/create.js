@@ -3,7 +3,7 @@ $(document).ready(function() {
     {
         var count = 0;
 
-        $(".add").click(function() {
+        $(document).on("click", ".add", function() {
             var $parentDiv = $("<div>",{"class": "form-group input-group expertise-field", "id": "expertise-"+count});
             var $input = $("<input>",{"type": "text", "name": "expertise[]", "class": "form-control", "placeholder": "Something else"});
             var $delbut = $("<span>", {"class":"create-delimg btn btn-sm btn-outline-danger fas fa-trash-alt"});
@@ -13,8 +13,10 @@ $(document).ready(function() {
             count++;
         });
 
-        $(".create-delimg").click(function() {
-            console.log("DELETE");
+        $(document).on("click", ".create-delimg", function() {
+            var $del = $(this).closest("div").attr("id");
+            $("#"+$del).remove();
+            console.log("removed #"+$del);
         });
     }
 });
