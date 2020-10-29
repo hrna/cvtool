@@ -6,6 +6,10 @@
 				<label for="fullName">Full name</label>
 				<input type="text" name="fullName" class="form-control" id="fullName" placeholder="Mikko Mallikas" />
 			</div>
+			<div class="form-group col-md-6">
+				<label for="email">Email</label>
+				<input type="text" name="email" class="form-control" id="email" placeholder="email@address.com" />
+			</div>
 		</div>
 		<div class="form-group">
 			<label for="address">Address</label>
