@@ -16,7 +16,14 @@ $(document).ready(function() {
         $(document).on("click", ".create-delimg", function() {
             var $del = $(this).closest("div").attr("id");
             $("#"+$del).remove();
-            console.log("removed #"+$del);
+            //console.log("removed #"+$del);
+        });
+
+        // create a JSON from form contents
+        $("#createForm").on("change", function(){
+            $("#previewjson").addClass("border");
+            var jsonprev = JSON.stringify($("#createForm").serializeArray());
+            $("#previewjson").html(jsonprev);
         });
     }
 });

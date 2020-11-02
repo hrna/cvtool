@@ -1,10 +1,10 @@
 <div class="col-md-12" id="create">
-	<form>
+	<form id="createForm" method="post">
 		<h4>Personal details</h4>
 		<div class="form-row">
 			<div class="form-group col-md-6">
-				<label for="fullName">Full name</label>
-				<input type="text" name="fullName" class="form-control" id="fullName" placeholder="Mikko Mallikas" />
+				<label for="full-name">Full name</label>
+				<input type="text" name="full-name" class="form-control" id="fullName" placeholder="Mikko Mallikas" />
 			</div>
 			<div class="form-group col-md-6">
 				<label for="email">Email</label>
@@ -39,5 +39,9 @@
 				<input type="text" name="expertise[]" class="form-control" id="expertise" placeholder="Microsoft Visual Studio" />
 			</div>
 		</div>
+		<div class="form-group">
+			<button class="btn btn-primary btn-sm" type="submit">Export</button>
+		</div>
 	</form>
+	<div class="col-md-12" id="previewjson"></div>
 </div>
