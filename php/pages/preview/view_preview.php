@@ -1,6 +1,6 @@
 
 
-<div class="col-md-12" id="preview"></div>
+<div class="col-md-12 border" id="preview"></div>
 
 
 <script id="preview-template" type="text/x-handlebars-template">
