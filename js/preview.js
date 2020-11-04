@@ -3,7 +3,7 @@ $(document).ready(function() {
     {
 		function getPreview()
 		{
-			//console.log(postData);
+			console.log(postData);
 			// Handlebars insert
 			if(postData)
 			{

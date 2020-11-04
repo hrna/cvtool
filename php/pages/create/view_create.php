@@ -2,17 +2,21 @@
 	<form id="createForm" method="post" action="preview">
 		<h4>Personal details</h4>
 		<div class="form-row">
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label for="fullName">Full name</label>
 				<input type="text" name="fullName" class="form-control" id="fullName" placeholder="Mikko Mallikas" required />
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label for="email">Email</label>
 				<input type="text" name="email" class="form-control" id="email" placeholder="email@address.com" required />
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-md-3">
 				<label for="dob">Date of birth</label>
 				<input type="text" name="dob" class="form-control" id="dob" placeholder="3.11.2020" required />
+			</div>
+			<div class="form-group col-md-3">
+				<label for="phone">Phone</label>
+				<input type="text" name="phone" class="form-control" id="phone" placeholder="+358 40 123 4567" required />
 			</div>
 		</div>
 		<div class="form-group">
@@ -67,6 +71,7 @@
 		</div>
 
 		<div class="form-group">
+			<input type="hidden" name="date" value="<?php echo date('d.m.Y')?>" />
 			<button class="btn btn-primary btn-sm" type="submit">Create</button>
 		</div>
 	</form>
