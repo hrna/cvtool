@@ -4,8 +4,8 @@ $(document).ready(function() {
 		// Declare getVehicles function
 		function getPreview()
 		{
-			console.log(postData);
-			// AJAX CALL
+			//console.log(postData);
+			// Handlebars insert
 			if(postData)
 			{
 				// Retrieve the template data from the HTML (jQuery is used here).
