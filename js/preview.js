@@ -1,7 +1,6 @@
 $(document).ready(function() {
     if ($("#preview").length > 0)
     {
-		// Declare getVehicles function
 		function getPreview()
 		{
 			//console.log(postData);
