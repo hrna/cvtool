@@ -36,9 +36,10 @@
 		<!-- Bootstrap JS -->
 		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
 
-		<!-- Other JS  -->
+		<!-- Other JS  --> 
 		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/js/create.js"></script>
-
+		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/js/preview.js"></script>
+		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/js/handlebars.v4.7.6.min.js"></script>
 	</body>
 </html>
 

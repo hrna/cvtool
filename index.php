@@ -6,9 +6,11 @@
 
   require("php/inc/config/config.php");
   require("php/inc/classes/utilityManager.php");
+  require("php/inc/classes/cvManager.php");
 
 
   $util = new utilityManager($config);
+  $cv = new CVManager();
   
   $notFound = false;
   $page = $util->arg(0);

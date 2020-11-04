@@ -1,10 +1,10 @@
 <div class="col-md-12" id="create">
-	<form id="createForm" method="post" action="handler/create">
+	<form id="createForm" method="post" action="preview">
 		<h4>Personal details</h4>
 		<div class="form-row">
 			<div class="form-group col-md-4">
-				<label for="full-name">Full name</label>
-				<input type="text" name="full-name" class="form-control" id="fullName" placeholder="Mikko Mallikas" required />
+				<label for="fullName">Full name</label>
+				<input type="text" name="fullName" class="form-control" id="fullName" placeholder="Mikko Mallikas" required />
 			</div>
 			<div class="form-group col-md-4">
 				<label for="email">Email</label>
@@ -34,7 +34,7 @@
 			</div>
 			<div class="form-group col-md-2">
 				<label for="zipcode">Zip code</label>
-				<input type="text" class="form-control" id="zipcode" placeholder="01530" required />
+				<input type="text" class="form-control" name="zip" id="zipcode" placeholder="01530" required />
 			</div>
 		</div>
 		<h4>Areas of expertise <span class="btn btn-secondary btn-sm fas fa-plus-circle add-exp float-right"></span></h4>

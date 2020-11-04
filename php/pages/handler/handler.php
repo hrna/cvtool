@@ -5,7 +5,7 @@
     switch($arg)
     {
         default:
-            die(var_dump($_POST));
+            //$cv->createJSON($_POST);
             break;
     }
 
