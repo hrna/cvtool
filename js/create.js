@@ -15,7 +15,7 @@ $(document).ready(function() {
         });
 
         $(document).on("click", ".add-skill", function() {
-            var $parentDiv = $("<div>",{"class": "form-group input-group skills-field", "id": "skills-"+countExp});
+            var $parentDiv = $("<div>",{"class": "form-group input-group skills-field", "id": "skills-"+countSkill});
             var $input = $("<input>",{"type": "text", "name": "skills[]", "class": "form-control", "placeholder": "Something else"});
             var $delbut = $("<span>", {"class":"create-delimg btn btn-sm btn-outline-danger fas fa-trash-alt"});
             $parentDiv.append($input);

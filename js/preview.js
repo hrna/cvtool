@@ -3,7 +3,14 @@ $(document).ready(function() {
     {
 		function getPreview()
 		{
-			console.log(postData);
+			// creating line breaks when using textarea
+			Handlebars.registerHelper('breaklines', function(text) 
+			{
+				text = Handlebars.Utils.escapeExpression(text);
+				text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+				return new Handlebars.SafeString(text);
+			});
+
 			// Handlebars insert
 			if(postData)
 			{

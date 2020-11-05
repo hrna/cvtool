@@ -2,7 +2,6 @@
 
 <div class="col-md-12 border" id="preview"></div>
 
-
 <script id="preview-template" type="text/x-handlebars-template">
 	<div class="row col-md-12">
 		<div class="col-md-6 text-left"><small>Curriculum Vitae</small></div>
@@ -73,7 +72,7 @@
 			<tbody>
 				<tr>
 					<td scope="col"></td>
-					<td scope="col" class="text-left">{{wExperience}}</td> 
+					<td scope="col" class="text-left">{{breaklines wExperience}}</td> 
 				</tr>
 			</tbody>
 		</table>
@@ -95,5 +94,5 @@
 </script>
 
 <script language="JavaScript" type="text/javascript">
-        	var postData = <?php echo $data?>;
+        const postData = <?php echo $data?>;
 </script>

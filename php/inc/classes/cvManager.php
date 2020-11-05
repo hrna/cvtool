@@ -13,6 +13,7 @@
 		{
 			if ($data)
 			{
+				$_SESSION['formdata'] = $data;
 				return json_encode($data);
 			}
 			else

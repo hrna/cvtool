@@ -72,7 +72,7 @@
 
 		<div class="form-group">
 			<input type="hidden" name="date" value="<?php echo date('d.m.Y')?>" />
-			<button class="btn btn-primary btn-sm" type="submit">Create</button>
+			<button class="btn btn-primary btn-sm" type="submit">Preview</button>
 		</div>
 	</form>
 	<div class="col-md-12" id="previewjson"></div>
