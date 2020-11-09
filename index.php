@@ -10,7 +10,7 @@
 
 
   $util = new utilityManager($config);
-  $cv = new CVManager();
+  $cv = new CVManager($config);
   
   $notFound = false;
   $page = $util->arg(0);

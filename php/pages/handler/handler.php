@@ -4,8 +4,16 @@
 
     switch($arg)
     {
+        case 'pdf':
+            if (!empty($_SESSION['formdata']))
+            {
+                $cv->createPDF();
+                break;
+            }
+            $util->redirectBack();
+            break;
         default:
-            //$cv->createJSON($_POST);
+            die("default");
             break;
     }
 

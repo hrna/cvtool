@@ -6,7 +6,8 @@
 	$config = new stdClass();
 	$config->version = "0.1";
 	
-	$config->home = ""; // site root
+	$config->root = "/var/www/cvtool/"; // site root
+	$config->home = "";
 	
 	
 	/*

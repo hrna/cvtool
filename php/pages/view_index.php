@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Cache-control" content="public">
 		<title>CV TOOL</title>
-		<link href="<?php echo $config->home?>/css/main.css" rel="stylesheet" type="text/css">
+		<link href="<?php echo $config->home?>css/main.css" rel="stylesheet" type="text/css">
 		<script src="https://kit.fontawesome.com/5fa9fe60f4.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -31,15 +31,15 @@
 		</div>
 
 		<!-- jQuery  -->
-		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/js/jquery-3.5.1.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>js/jquery-3.5.1.min.js"></script>
 
 		<!-- Bootstrap JS -->
-		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>bootstrap-4.5.3/js/bootstrap.bundle.min.js"></script>
 
 		<!-- Other JS  --> 
-		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/js/create.js"></script>
-		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/js/preview.js"></script>
-		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>/js/handlebars.v4.7.6.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>js/create.js"></script>
+		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>js/preview.js"></script>
+		<script language="JavaScript" type="text/javascript" src="<?php echo $config->home?>js/handlebars.v4.7.6.min.js"></script>
 	</body>
 </html>
 
