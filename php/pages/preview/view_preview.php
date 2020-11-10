@@ -1,17 +1,18 @@
 
-<div class="col-md-12 border" id="preview">
+<?php if (!empty($_SESSION['formdata'])):?>
+<div class="col-md-12" id="preview">
 
 	<div class="row col-md-12">
 		<div class="col-md-6 text-left"><small>Curriculum Vitae</small></div>
 		<div class="col-md-6 text-right"><small><?php echo $_SESSION['formdata']['date']?></small></div>
 	</div>
-    <div class="col-md-12 text-center">
+    <div class="col-md-12 text-left">
         <p>
-            <h1><?php echo $_SESSION['formdata']['fullName']?></h1> <br /> 
-            <span class="fas fa-birthday-cake"></span> <?php echo $_SESSION['formdata']['dob']?> <br />
-            <span class="fas fa-address-card"></span> <?php echo $_SESSION['formdata']['address'].', '.$_SESSION['formdata']['city'].' '.$_SESSION['formdata']['zip']?><br />
-            <span class="fas fa-phone-alt"></span><?php echo $_SESSION['formdata']['phone']?><br />
-            <span class="fas fa-at"></span> <?php echo $_SESSION['formdata']['email']?>
+            <h2><?php echo $_SESSION['formdata']['fullName']?></h2> <small>
+			dob:  <?php echo $_SESSION['formdata']['dob']?> <br />
+			address: <?php echo $_SESSION['formdata']['address'].', '.$_SESSION['formdata']['city'].' '.$_SESSION['formdata']['zip']?><br />
+            tel. <?php echo $_SESSION['formdata']['phone']?><br />
+            email: <?php echo $_SESSION['formdata']['email']?></small>
         </p>
     </div>
     
@@ -70,7 +71,7 @@
 			<tbody>
 				<tr>
 					<td scope="col"></td>
-					<td scope="col" class="text-left"><?php echo $_SESSION['formdata']['wExperience']?></td> 
+					<td scope="col" class="text-left"><?php echo nl2br($_SESSION['formdata']['wExperience'])?></td> 
 				</tr>
 			</tbody>
 		</table>
@@ -96,3 +97,5 @@
 		<a href="<?php echo $util->formLink('handler/pdf')?>" class="btn btn-sm btn-primary">PDF</a>
 	</div>
 </div>
+
+<?php endif;?>
