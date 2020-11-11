@@ -29,7 +29,7 @@
 			
 			// Create an instance of the class:
 			//$mpdf = new \Mpdf\Mpdf();
-			$mpdf = new \Mpdf\Mpdf(['tempDir' => '/var/www/cvtool/tmp/']);
+			$mpdf = new \Mpdf\Mpdf(['tempDir' => $this->config->tmp]);
 			
 
 			// Write some HTML code:

@@ -6,9 +6,10 @@
 	$config = new stdClass();
 	$config->version = "0.1";
 	
-	$config->root = "/var/www/cvtool/"; // site root
-	$config->home = "";
-	
+	$config->root = getcwd()."/"; // site root
+	$config->home = ".";
+	$config->tmp = $config->root."tmp/";
+
 	
 	/*
 	 * Database connections

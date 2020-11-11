@@ -94,7 +94,7 @@
 
 <div class="row col-md-12">
 	<div class="row col-md-3">
-		<a href="<?php echo $util->formLink($config->home.'handler/pdf')?>" class="btn btn-sm btn-primary">PDF</a>
+		<a href="<?php echo $util->formLink($config->home.'/handler/pdf')?>" class="btn btn-sm btn-primary">PDF</a>
 	</div>
 </div>
 
