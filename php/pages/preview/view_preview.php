@@ -96,6 +96,9 @@
 	<div class="row col-md-3">
 		<a href="<?php echo $util->formLink($config->home.'/handler/pdf')?>" class="btn btn-sm btn-primary">PDF</a>
 	</div>
+	<div class="row col-md-3">
+		<a href="<?php echo $util->formLink($config->home.'/handler/json')?>" class="btn btn-sm btn-primary">JSON</a>
+	</div>
 </div>
 
 <?php endif;?>

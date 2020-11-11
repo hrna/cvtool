@@ -1,0 +1,10 @@
+# Disable indexing (directory listing)
+#Options -Indexes
+
+# Rewrite all URLs to index.php?q=string
+# Browser shows the typed URL (i.e. www.example.com/test/a/b)
+# this is translated to example.com/index.php?q=test/a/b
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?q=$1 [QSA]

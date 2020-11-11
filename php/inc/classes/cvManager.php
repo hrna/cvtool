@@ -13,8 +13,9 @@
 		{
 			if ($data)
 			{
-				$_SESSION['formdata'] = $data;
-				return json_encode($data);
+				$json = json_encode($data, JSON_PRETTY_PRINT);
+				$_SESSION['jsonOutput'] = $json;
+				return true;
 			}
 			else
 				return false;
@@ -25,15 +26,11 @@
 			
 			// Require composer autoload
 			require_once $this->config->root.'plugins/mpdf/vendor/autoload.php';
-		
 			
 			// Create an instance of the class:
-			//$mpdf = new \Mpdf\Mpdf();
 			$mpdf = new \Mpdf\Mpdf(['tempDir' => $this->config->tmp]);
-			
 
 			// Write some HTML code:
-			//$html = ob_get_contents();
 			$css = file_get_contents($this->config->root."css/pdf.css");
 			$mpdf->WriteHTML($css,\Mpdf\HTMLParserMode::HEADER_CSS);
 		
@@ -142,7 +139,8 @@
 
 
 			// Output a PDF file directly to the browser
-			$mpdf->Output("test.pdf", "D");
+			$filename = $_SESSION['formdata']['fullName']."_CV.pdf";
+			$mpdf->Output($filename, "D");
 
 			#print_r($_SESSION['formdata']);
 		}

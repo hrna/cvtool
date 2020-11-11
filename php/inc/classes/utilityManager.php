@@ -25,7 +25,19 @@
 			header('Location: ' . $this->config->home . "/$path");
 			exit;
 		}
-
+		function redirectAPI($path, $out = false)
+		{
+			if ($out)
+			{
+				header('Location: ' . $this->config->home . "/$path");
+				exit;
+			}
+			else
+			{
+				header('Location: ../api/'.$path);
+				exit;
+			}
+		}
 		function arg($index = 0)
 		{
 			if(isset($_GET['q']))

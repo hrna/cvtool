@@ -29,7 +29,11 @@
 				else require('php/pages/view_landing.php');
 			?>           
 		</div>
-
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted">A simple CV Tool project</span>
+		</div>
+	</footer>
 		<!-- jQuery  -->
 		<script language="JavaScript" type="text/javascript" src="<?php echo $util->formLink('js/jquery-3.5.1.min.js')?>"></script>
 
