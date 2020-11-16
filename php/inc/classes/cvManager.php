@@ -37,21 +37,13 @@
 			$expertise ="";
 			foreach ($_SESSION['formdata']['expertise'] as $exp)
 			{
-				$expertise .= '
-				<tr>
-					<td></td>
-					<td><li>'.$exp.'</li></td>
-				</tr>';
+				$expertise .= '<li>'.$exp.'</li>';
 			}
 			
 			$skills ="";
 			foreach ($_SESSION['formdata']['skills'] as $skill)
 			{
-				$skills .= '
-				<tr>
-					<td></td>
-					<td><li>'.$skill.'</li></td>
-				</tr>';
+				$skills .= '<li>'.$skill.'</li>';
 			}
 
 			$html1 = '
@@ -77,56 +69,46 @@
 				<table style="width: 100%">
 					<tr>
 						<th style="padding-right: 20px; width: 175px">Areas of Expertise</th>
-						<th></th>
+						<td>'.$expertise.'</td>
 					</tr>
-					'.$expertise.'
 				</table>
 
+				<hr />
 				<br />
 				
 				<table style="width: 100%">
 					<tr>
 						<th style="padding-right: 20px; width: 175px">Personal Skills</th>
-						<th></th>
+						<td>'.$skills.'</td>
 					</tr>
-					'.$skills.'
 				</table>
-			
+
+				<hr />
 				<br />
 				
 				<table style="width: 100%">
 					<tr>
 						<th style="padding-right: 20px; width: 175px">Personal Summary</th>
-						<th></th>
-					</tr>
-					<tr>
-						<td></td>
 						<td>'.nl2br($_SESSION['formdata']['pSummary']).'</td>
 					</tr>
 				</table>
 
+				<hr />
 				<br />
 
 				<table style="width: 100%">
 					<tr>
-						<th style="padding-right: 20px; width: 175px">Personal Summary</th>
-						<th></th>
-					</tr>
-					<tr>
-						<td></td>
+						<th style="padding-right: 20px; width: 175px">Work Experience</th>
 						<td>'.nl2br($_SESSION['formdata']['wExperience']).'</td>
 					</tr>
 				</table>
 
+				<hr />
 				<br />
 
 				<table style="width: 100%">
 					<tr>
 						<th style="padding-right: 20px; width: 175px">References</th>
-						<th></th>
-					</tr>
-					<tr>
-						<td></td>
 						<td>'.nl2br($_SESSION['formdata']['references']).'</td>
 					</tr>
 				</table>
